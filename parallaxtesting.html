@@ -1,66 +1,16 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body, html {
-              height:100%;
-            }
-            body {
-                margin:0 0 0 0;
-            }
-            .navbar {
-                overflow: hidden;
-                background-color: rgba(255,255,255,100%);
-                position: fixed; /* Set the navbar to fixed position */
-                top: 0; /* Position the navbar at the top of the page */
-                width: 100%; /* Full width */
-            }
-            .navbar a {
-                float: right;
-                display: block;
-                color: rgb(15,15,15);
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-family: 'arial';
-                
-            }
-            .navbar a:hover {
-                color: rgb(190,190,190);
-            }
-            .bgphoto1 {
-              /* The image used */
-              background-image:url("img_parallax.jpg");
-
-              /* Full height */
-              height:100%;
-
-              /* Create the parallax scrolling effect */
-              background-attachment:fixed;
-              background-position:center;
-              background-repeat:no-repeat;
-              background-size:cover; 
-            }
-            .bgphoto1box {
-                position: absolute;
-                left: 0;
-                top: 50%;
-                width: 100%;
-                text-align: center;
-            }
-            .bgphoto1text {
-                background-color: rgba(255, 255, 255, 70%);
-                color: #000;
-                padding: 18px;
-                font-size: 40px;
-                font-family: 'georgia';
-                letter-spacing: 2px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="stylesheets/ptstyles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="stylesheets/coolheader.css"> -->
         <title>Parallax Testing</title>
     </head>
     <body>
         <div class="navbar">
-            <a>Home</a>
+            <a>Me</a>
+            <a>About</a>
+            <a href="passwordprotected1.html">Password Protected</a>
+            <a id="currenttab">Home</a>
         </div>
         <div class="bgphoto1">
             <div class="bgphoto1box">
@@ -68,7 +18,10 @@
             </div>
         </div>
         <h2>text below image</h2>
-        <div class="bgphoto1">
+        <div class="bgphoto1small">
         </div>
+        <footer>
+            <p>Copyright &copy; 2019 by Zachariah Clark. All rights reserved.</p>
+        </footer>
     </body>
 </html>

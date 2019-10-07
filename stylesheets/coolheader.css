@@ -1,0 +1,36 @@
+/* Border from Y to X  */
+div.coolheader a:before, div.coolheader a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.coolheader a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.coolheader a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.coolheader a:hover:before, div.coolheader a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+div.coolheader {
+    font-family: 'Arial';
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+}
